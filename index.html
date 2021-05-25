@@ -42,6 +42,7 @@ EX12: Write a function to color the price of each product in a different one eve
     <button onclick="changeFooter()">new address</button>
     <button onclick="linkClass()">class change</button>
     <button onclick="imageToggle()">photo toggle</button>
+    <button onclick="randomColor()">photo toggle</button>
 
     <style>
       .linkss {
@@ -143,7 +144,7 @@ EX12: Write a function to color the price of each product in a different one eve
         let price = document.getElementsByTagName("tr > td:nth-child(5)")
         let randomColor = '#'+Math.floor(Math.random()*16777215).toString(16);
         for (let num of price){
-          num.
+          num.style.color = randomColor
         }
       }
 

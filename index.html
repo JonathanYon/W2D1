@@ -109,8 +109,8 @@ EX12: Write a function to color the price of each product in a different one eve
       }
       
       const changeColor = function(){
-        let backgroundColor = document.getElementsByTagName("body")
-        backgroundColor.style.color = "red"
+        document.body.style.background = "#f3f3f5"
+        
       }
       const changeFooter = function(){
         let footerChange = document.getElementById("foot")
@@ -120,7 +120,7 @@ EX12: Write a function to color the price of each product in a different one eve
       const linkClass = function(){
         let links = document.getElementsByTagName("td")
         for (let link of links){
-          links.classList
+          links.classList.add("linkss")
         }
       }
 

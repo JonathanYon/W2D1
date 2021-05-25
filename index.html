@@ -41,11 +41,15 @@ EX12: Write a function to color the price of each product in a different one eve
     <button onclick="changeColor()">back color</button>
     <button onclick="changeFooter()">new address</button>
     <button onclick="linkClass()">class change</button>
+    <button onclick="imageToggle()">photo toggle</button>
 
     <style>
       .linkss {
         background-color: yellow;
       }
+      /* .photo {
+        background-color: yellow;
+      } */
     </style>
 
     <h1 id="title">Shopifi</h1>
@@ -127,6 +131,12 @@ EX12: Write a function to color the price of each product in a different one eve
         let links = document.getElementsByTagName("a")
         for (let link of links){
           link.classList.add("linkss")
+        }
+      }
+      const imageToggle = function(){
+        let imagee = document.getElementsByTagName("img")
+        for (let img of imagee){
+          img.classList.toggle("photo")
         }
       }
 

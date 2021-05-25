@@ -40,7 +40,13 @@ EX12: Write a function to color the price of each product in a different one eve
     <button onclick="changeText()">new header</button>
     <button onclick="changeColor()">back color</button>
     <button onclick="changeFooter()">new address</button>
+    <button onclick="linkClass()">class change</button>
 
+    <style>
+      .linkss {
+        background-color: yellow;
+      }
+    </style>
 
     <h1 id="title">Shopifi</h1>
     <table>
@@ -118,9 +124,9 @@ EX12: Write a function to color the price of each product in a different one eve
                                   Evans, GA 30809`
       }
       const linkClass = function(){
-        let links = document.getElementsByTagName("td")
+        let links = document.getElementsByTagName("a")
         for (let link of links){
-          links.classList.add("linkss")
+          link.classList.add("linkss")
         }
       }
 

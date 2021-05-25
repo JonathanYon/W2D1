@@ -36,7 +36,11 @@ EX12: Write a function to color the price of each product in a different one eve
     <title>Shopifi</title>
 </head>
 <body>
-    <button onclick="changeColor()">new header</button>
+  
+    <button onclick="changeText()">new header</button>
+    <button onclick="changeColor()">back color</button>
+    <button onclick="changeFooter()">new address</button>
+
 
     <h1 id="title">Shopifi</h1>
     <table>
@@ -93,16 +97,34 @@ EX12: Write a function to color the price of each product in a different one eve
       </form>
       <footer>
         <div>
-            <p>8 W. Monroe Circle <br/>
+            <p  id="foot">8 W. Monroe Circle <br/>
               Tustin, CA 92780</p>
              <a href="#">Shopifi</a>
         </div>
     </footer>
     <script>
-      const changeColor = function(){
+      const changeText = function(){
         let shop = document.getElementById("title");
         shop.innerText = "Shopif"
       }
+      
+      const changeColor = function(){
+        let backgroundColor = document.getElementsByTagName("body")
+        backgroundColor.style.color = "red"
+      }
+      const changeFooter = function(){
+        let footerChange = document.getElementById("foot")
+        footerChange.innerText = `8710 Sherwood St.
+                                  Evans, GA 30809`
+      }
+      const linkClass = function(){
+        let links = document.getElementsByTagName("td")
+        for (let link of links){
+          links.classList
+        }
+      }
+
     </script>
+  
 </body>
 </html>

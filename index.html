@@ -36,7 +36,9 @@ EX12: Write a function to color the price of each product in a different one eve
     <title>Shopifi</title>
 </head>
 <body>
-    <h1>Shopifi</h1>
+    <button onclick="changeColor()">new header</button>
+
+    <h1 id="title">Shopifi</h1>
     <table>
         <tr>
           <th>Product</th>
@@ -96,5 +98,11 @@ EX12: Write a function to color the price of each product in a different one eve
              <a href="#">Shopifi</a>
         </div>
     </footer>
+    <script>
+      const changeColor = function(){
+        let shop = document.getElementById("title");
+        shop.innerText = "Shopif"
+      }
+    </script>
 </body>
 </html>
